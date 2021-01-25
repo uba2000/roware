@@ -69,6 +69,9 @@ input, .form-control {
         background-color: var(--primary-color);
         color: var(--white);
         font-weight: 500;
+        &:hover {
+            color: var(--white) !important;
+        }
     }
 }
 .rw {
@@ -95,9 +98,47 @@ input, .form-control {
         &-white {
             color: var(--white) !important;
         }
+        &-primary-2 {
+            color: var(--primary-text-color);
+        }
     }
 }
-.portfolio {
+.portfolio, .home {
     padding-top: 15px;
     padding-bottom: 30px;
+}
+.card {
+    box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.15), 0 0 0 -0.5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+}
+.card .tp-lbl {
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--primary-text-color);
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 9px;
+}
+.card .card-title {
+    font-size: 25px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+.card .card-sub-text {
+    font-size: 17px;
+    font-weight: 500;
+}
+.card .card-body {
+    padding-top: 65px;
+    padding-bottom: 65px;
 }

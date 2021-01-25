@@ -48,5 +48,6 @@ export default {};
 }
 .navbar {
 	padding: 30px 35px !important;
+	background-color: transparent;
 }
 </style>
