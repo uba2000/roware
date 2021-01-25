@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #880000;
+    --grey-color: #eeeeee;
+    --neutral-text-color: #393939;
+    --primary-text-color: #b91f1f;
+    --grey-text-color: #e2e2e2;
+    --white: #fff;
+    --black: #3d3d3d;
+    --disabled: #ededed;
+    --def-border-radius: 10px;
+    --border-color: #ced4da;
+}
+
+body {
+    font-family:
+        'Source Sans Pro',
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        'Helvetica Neue',
+        Arial,
+        sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--neutral-text-color);
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-weight: 500;
+}
+
+input, .form-control {
+    &:focus {
+        box-shadow: none !important;
+        border-color: initial !important;
+        border-color: var(--border-color) !important;
+    }
+}
+
+.form-control {
+    height: calc(1.5em + 0.75rem + 12px);
+}
+
+.btn {
+    max-width: 250px;
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--def-border-radius);
+    &--primary {
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-weight: 500;
+    }
+}
+
+.rw {
+    &-icon {
+        color: var(--white);
+    }
+    &-text {
+        &-bl {
+            font-size: 1.25rem;
+            line-height: 1.4rem;
+            font-weight: 400;
+        }
+        &-bm {
+            font-size: 1rem;
+            line-height: 1.4rem;
+            font-weight: 400;
+        }
+        &-bs {
+            font-size: .875rem;
+            line-height: 1.15rem;
+        }
+    }
+    &-color {
+        &-white {
+            color: var(--white) !important;
+        }
+    }
+}
+
+// @media (min-width: 960px) {
+//     .rw {
+//         &-text {
+//             &-bm {
+//                 font-size: .875rem;
+//                 line-height: 1.25rem;
+//             }
+//             &-bs {
+//                 font-size: .75rem;
+//                 line-height: 1rem;
+//             }
+//         }
+//     }
+// }
