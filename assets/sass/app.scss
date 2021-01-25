@@ -10,7 +10,6 @@
     --def-border-radius: 10px;
     --border-color: #ced4da;
 }
-
 body {
     font-family:
         'Source Sans Pro',
@@ -30,7 +29,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-
 *,
 *::before,
 *::after {
@@ -38,11 +36,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
 label {
     font-weight: 500;
 }
-
 input, .form-control {
     &:focus {
         box-shadow: none !important;
@@ -50,11 +46,9 @@ input, .form-control {
         border-color: var(--border-color) !important;
     }
 }
-
 .form-control {
     height: calc(1.5em + 0.75rem + 12px);
 }
-
 .btn {
     max-width: 250px;
     width: 100%;
@@ -66,7 +60,6 @@ input, .form-control {
         font-weight: 500;
     }
 }
-
 .rw {
     &-icon {
         color: var(--white);
@@ -93,18 +86,3 @@ input, .form-control {
         }
     }
 }
-
-// @media (min-width: 960px) {
-//     .rw {
-//         &-text {
-//             &-bm {
-//                 font-size: .875rem;
-//                 line-height: 1.25rem;
-//             }
-//             &-bs {
-//                 font-size: .75rem;
-//                 line-height: 1rem;
-//             }
-//         }
-//     }
-// }
