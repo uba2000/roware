@@ -1,5 +1,9 @@
 <template>
-	<b-navbar toggleable="lg" class="px-4">
+	<b-navbar
+		toggleable="lg"
+		class="px-4 rw-navbar"
+		:class="{ 'index-spacing': homeSpacing }"
+	>
 		<nuxt-link to="/" target="_self" class="navbar-brand">
 			<logo class="nv-logo" />
 		</nuxt-link>
@@ -27,7 +31,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+	computed: {
+		homeSpacing() {
+			return this.$route.name == "index";
+		},
+	},
+};
 </script>
 
 <style lang="scss" scoped>
@@ -49,5 +59,7 @@ export default {};
 .navbar {
 	padding: 30px 35px !important;
 	background-color: transparent;
+	position: relative;
+	z-index: 9999;
 }
 </style>

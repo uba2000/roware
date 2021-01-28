@@ -120,6 +120,8 @@ export default {};
 footer {
 	background-color: var(--grey-color);
 	padding: 48px 12px;
+	position: relative;
+	z-index: 10;
 	.ft-header-title {
 		font-weight: 600;
 		margin-bottom: 16px;
