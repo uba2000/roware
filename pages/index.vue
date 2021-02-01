@@ -31,10 +31,10 @@
 			</b-container>
 			<div class="landing-mask">
 				<div>
-					<img
+					<!-- <img
 						:src="require('~/assets/img/landing-mask.png')"
 						alt="Landing Mask"
-					/>
+					/> -->
 				</div>
 			</div>
 		</section>
@@ -186,7 +186,7 @@
 				</b-container>
 			</div>
 		</section>
-		<section class="pb-0">
+		<section class="py-0">
 			<div class="container">
 				<b-row class="mb-4">
 					<b-col cols="12">
@@ -535,8 +535,15 @@ export default {
 <style lang="scss" scoped>
 .landing-mask {
 	position: absolute;
-	top: -127px;
+	top: -270px;
 	right: 0;
+	width: 625px;
+	height: 1074px;
+	> div {
+		background-image: url(../assets/img/landing-mask.png);
+		background-repeat: no-repeat;
+		height: 100%;
+	}
 }
 .has-background {
 	position: relative;

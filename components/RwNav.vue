@@ -1,9 +1,5 @@
 <template>
-	<b-navbar
-		toggleable="lg"
-		class="px-4 rw-navbar"
-		:class="{ 'index-spacing': homeSpacing }"
-	>
+	<b-navbar toggleable="lg" class="px-4 rw-navbar index-spacing">
 		<nuxt-link to="/" target="_self" class="navbar-brand">
 			<logo class="nv-logo" />
 		</nuxt-link>
@@ -12,6 +8,7 @@
 
 		<b-collapse id="nav-collapse" is-nav>
 			<b-navbar-nav class="ml-auto">
+				<br />
 				<li class="nav-item">
 					<a href="#" target="_self" class="nav-link"> About Us </a>
 				</li>
@@ -24,6 +21,16 @@
 					<nuxt-link to="/contact" target="_self" class="nav-link">
 						Contact Us
 					</nuxt-link>
+				</li>
+				<li class="nav-item">
+					<a
+						href="https://academic.rowareng.com"
+						class="p-0 nav-link"
+					>
+						<button class="btn btn--primary text-uppercase">
+							<span>Academic</span>
+						</button>
+					</a>
 				</li>
 			</b-navbar-nav>
 		</b-collapse>
@@ -51,10 +58,6 @@ export default {
 .nuxt-link-active {
 	font-weight: 500;
 	color: var(--primary-text-color) !important;
-}
-.nv-logo {
-	height: 40px;
-	width: 45px;
 }
 .navbar {
 	padding: 30px 35px !important;

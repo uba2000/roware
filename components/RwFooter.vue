@@ -17,9 +17,9 @@
 							<div>
 								<ul>
 									<li>
-										<a href="">
+										<nuxt-link to="/contact">
 											<span>Contact</span>
-										</a>
+										</nuxt-link>
 									</li>
 									<li>
 										<a href="">
@@ -93,12 +93,12 @@
 								<ul>
 									<li>
 										<a href="">
-											<span>+01 256 6525</span>
+											<span>+234 816 566 1377</span>
 										</a>
 									</li>
 									<li>
 										<a href="">
-											<span>help@roware.com</span>
+											<span>info@rowareng.com</span>
 										</a>
 									</li>
 								</ul>

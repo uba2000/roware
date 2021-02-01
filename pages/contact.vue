@@ -1,7 +1,11 @@
 <template>
 	<div class="contact">
 		<div>
-			<div class="logo-container"></div>
+			<div class="logo-container">
+				<nuxt-link to="/">
+					<logo class="nv-logo" :isWhite="true" />
+				</nuxt-link>
+			</div>
 			<div class="main-contact">
 				<b-row class="mx-0" no-gutters>
 					<b-col offset="0" cols="12" offset-md="2" md="8">
@@ -69,7 +73,7 @@
 												<div
 													class="text-center rw-text-bm rw-color-white"
 												>
-													+234 803 720 9221
+													+234 816 566 1377
 												</div>
 											</div>
 										</div>
@@ -92,7 +96,7 @@
 												<div
 													class="text-center rw-text-bm rw-color-white"
 												>
-													help@roware.com
+													info@rowareng.com
 												</div>
 											</div>
 										</div>
@@ -283,6 +287,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.logo-container {
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
 .header-title {
 	color: var(--white);
 }
