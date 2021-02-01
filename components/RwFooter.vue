@@ -107,7 +107,15 @@
 					</b-col>
 				</b-row>
 			</div>
-			<div class="copyright"></div>
+			<hr />
+			<div class="copyright">
+				<div class="text-center">
+					<span
+						>Copy &copy; February 2021 Roware. All Rights
+						reserved.</span
+					>
+				</div>
+			</div>
 		</b-container>
 	</footer>
 </template>

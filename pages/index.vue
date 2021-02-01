@@ -200,7 +200,7 @@
 						<div>
 							<div class="section-image-container text-center">
 								<img
-									:src="require('~/assets/img/img-3.png')"
+									:src="require('~/assets/img/img-3.jpeg')"
 									alt="Section Image"
 									class="section-image"
 								/>
@@ -483,7 +483,7 @@
 						<div>
 							<div class="section-image-container faded--left">
 								<img
-									:src="require('~/assets/img/img-4.png')"
+									:src="require('~/assets/img/img-4.jpeg')"
 									alt="Section Image"
 									class=""
 								/>
