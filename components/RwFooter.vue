@@ -125,6 +125,9 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.copyright {
+	font-size: 14px;
+}
 footer {
 	background-color: var(--grey-color);
 	padding: 48px 12px;

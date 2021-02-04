@@ -23,12 +23,9 @@
 					</nuxt-link>
 				</li>
 				<li class="nav-item">
-					<a
-						href="https://academic.rowareng.com"
-						class="p-0 nav-link"
-					>
-						<button class="btn btn--primary text-uppercase">
-							<span>Academic</span>
+					<a href="https://academy.rowareng.com" class="p-0 nav-link">
+						<button class="p-2 btn btn--primary">
+							<span>Academy</span>
 						</button>
 					</a>
 				</li>
@@ -50,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 .nav-link {
 	color: var(--neutral-text-color) !important;
-	font-weight: 400;
+	font-weight: 500;
 	padding-right: 32px !important;
 	font-size: 17px;
 }
